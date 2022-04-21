@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&display=swap");
+
+:root {
+  --home-blue: #5366c3;
+  --about-blue: #3f83c0;
+  --work-blue: #2aa1bd;
+  --contact-green: #15bfbb;
+  --bg-white: #fff;
+
+  font-size: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lobster", cursive;
+  background-color: var(--bg-white);
+}
+.container {
+  background-color: #dbe1e2;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 50vh auto;
+  box-shadow: 2px 2px 20px rgb(84, 83, 83);
+}
+p {
+  padding: 1rem;
+  text-transform: capitalize;
+}
+
+.p-home {
+  border-left: 0.5rem solid var(--home-blue);
+  
+  animation: bg-anim-home-back 1s 1 ease-in-out  ;  
+}
+
+.p-home:hover{
+  color: var(--bg-white);
+  background-color: var(--home-blue);
+  animation: bg-anim-home 1s 1 ease-in-out;
+}
+
+.p-about {
+  border-left: 0.5rem solid var(--about-blue);
+  animation: bg-anim-about-back 1s 1 ease-in-out ;  
+  
+}
+.p-about:hover {
+  color: var(--bg-white);
+  background-color: var(--about-blue);
+  animation: bg-anim-about 1s 1 ease-in-out alternate;
+}
+.p-work {
+  border-left: 0.5rem solid var(--work-blue);
+  animation: bg-anim-work-back 1s 1 ease-in-out ;  
+}
+.p-work:hover {
+  color: var(--bg-white);
+  background-color: var(--work-blue);
+  animation: bg-anim-work 1s 1 ease-in-out alternate;
+}
+
+.p-contact {
+  border-left: 0.5rem solid var(--contact-green);
+  animation: bg-anim-contact-back 1s 1 ease-in-out ;  
+}
+.p-contact:hover {
+  color: var(--bg-white);
+  background-color: var(--contact-green);
+  animation: bg-anim-contact 1s 1 ease-in-out alternate;
+}
+@keyframes bg-anim-home {
+  from {
+    color: var(--bg-white);
+    background-color: var(--home-blue);
+    width: 0%;
+    
+  }
+  to {
+    color: var(--bg-white);
+    background-color: var(--home-blue);
+    width: 100%;
+    
+  }
+}
+@keyframes bg-anim-home-back {
+  from {
+    color: black;
+    background-color:var(--home-blue);
+    width:100%;
+  }
+  to {
+    color: black;
+    background-color:var(--home-blue);
+    width: 0%;
+  }
+}
+
+@keyframes bg-anim-about {
+  from {
+    color: var(--bg-white);
+    background-color: var(--about-blue);
+    width: 0%;
+  }
+  to {
+    color: var(--bg-white);
+    background-color: var(--about-blue);
+    width: 100%;
+  }
+}
+@keyframes bg-anim-about-back {
+    from {
+      color: black;
+      background-color:var(--about-blue);
+      width:100%;
+    }
+    to {
+      color: black;
+      background-color:var(--about-blue);
+      width: 0%;
+    }
+  }
+  
+@keyframes bg-anim-work {
+  from {
+    color: var(--bg-white);
+    background-color: var(--work-blue);
+    width: 0%;
+  }
+  to {
+    color: var(--bg-white);
+    background-color: var(--work-blue);
+    width: 100%;
+  }
+}
+@keyframes bg-anim-work-back {
+    from {
+      color: black;
+      background-color:var(--work-blue);
+      width:100%;
+    }
+    to {
+      color: black;
+      background-color:var(--work-blue);
+      width: 0%;
+    }
+  }
+  
+@keyframes bg-anim-contact {
+  from {
+    color: var(--bg-white);
+    background-color: var(--contact-green);
+    width: 0%;
+  }
+  
+  to {
+    color: var(--bg-white);
+    background-color: var(--contact-green);
+    transform: translate(0);
+    
+  }
+}
+@keyframes bg-anim-contact-back {
+    from {
+      color: black;
+      background-color:var(--contact-green);
+      width:100%;
+    }
+    to {
+      color: black;
+      background-color:var(--contact-green);
+      width: 0%;
+    }
+  }
+  
